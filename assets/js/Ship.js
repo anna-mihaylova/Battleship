@@ -34,7 +34,7 @@ const SHIP = (function() {
         }
 
         init() {
-            this.shipHitsInit();
+            this.shipLocationInit();
         }
 
     }

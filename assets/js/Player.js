@@ -5,7 +5,7 @@ const PLAYER = (function() {
                 throw new Error('game must be instance of Game');
             }
             this._game = game;
-            this._shots = 20;
+            this._shots = 30;
             this._pointsForWin = 0;
             this._score = 0;
             this._$shots = $('#game #shotsValue');
