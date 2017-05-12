@@ -1,0 +1,214 @@
+body {
+    font-family: 'pleasantly_plumpnormal', Arial, sans-serif;
+    font-size: 1.27vw;
+    line-height: 20px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    color: #c0d9dd;
+}
+
+main, section, div, p {
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../img/background1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: url('../img/cursor.png'), auto;
+    z-index: 1;
+}
+
+nav {
+    width: 15%;
+    height: 40%;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+.div {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    right: 1%;
+    text-transform: capitalize;
+    border-radius: 15px;
+    border-bottom: 1px solid #c0d9dd;
+    z-index: 4;
+}
+
+.div.shots {
+    top: 1%;
+}
+
+.div.score {
+    top: 18%;
+}
+
+.div.ship.destroyer {
+    top: 34%;
+}
+
+.div.ship.submarinee {
+    top: 50%;
+}
+
+.div.ship.battleship {
+    top: 66%;
+}
+
+.div.ship.carrier {
+    top: 82%;
+}
+
+.img, h4 {
+    display: inline;
+    position: absolute;
+}
+
+h4 {
+    left: 25%;
+    bottom: 0%;
+}
+
+h4.ship {
+    left: 71%;
+}
+
+h4.value {
+    left: 80%;
+    font-weight: bold;
+}
+
+.img {
+    width: 20%;
+    height: 100%;
+    left: 3%;
+    bottom: 0%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+.img.shots {
+    background: url('../img/shots.png');
+    background-size: 100% 100%;
+}
+
+.img.score {
+    background: url('../img/score.png');
+    background-size: 100% 100%;
+}
+
+.img.destroyer.ship {
+    width: 30%;
+    background: url('../img/destroyer.png');
+    background-size: 100% 100%;
+}
+
+.img.submarinee.ship {
+    width: 40%;
+    background: url('../img/submarinee.png');
+    background-size: 100% 100%;
+}
+
+.img.battleship.ship {
+    width: 60%;
+    background: url('../img/battleship.png');
+    background-size: 100% 100%;
+}
+
+.img.carrier.ship {
+    width: 70%;
+    background: url('../img/carrier.png');
+    background-size: 100% 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="button"] {
+    width: 10%;
+    height: 6%;
+    position: absolute;
+    right: 1%;
+    top: 43%;
+    background-color: #345f6d;
+    font-family: 'pleasantly_plumpnormal', Arial, sans-serif;
+    color: #e36b2e;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 11;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #c0d9dd;
+}
+
+input[type="button"]:hover {
+    background-color: #e36b2e;
+    color: #345f6d;
+}
+
+input[type="button"]:active {
+    background-color: #345f6d;
+    box-shadow: 0 1px #e36b2e;
+    color: #e36b2e;
+    transform: translateY(2px);
+}
+
+.board {
+    width: 43%;
+    height: 50%;
+    position: absolute;
+    top: 0.5%;
+    left: 7%;
+    right: 20%;
+    border: 1px solid #c0d9dd;
+    z-index: 4;
+}
+
+.board div {
+    position: absolute;
+    border: 1px solid #c0d9dd;
+    z-index: 5;
+}
+
+.board .ship {
+    position: absolute;
+    border: 1px solid #c0d9dd;
+    z-index: 5;
+}
+
+.wrong {
+    background: url('../img/wrong.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+}
+
+.correct {
+    background: url('../img/correct.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+}
